@@ -1,0 +1,11 @@
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+ 
+<struts><!-- Configuration for the default package. -->
+    <package name="default" extends="struts-default">
+        <action name="hello" class="com.hectorlopezfernandez.pebble.struts2.action.HelloAction">
+            <result>/templates/hello.pebble</result>
+        </action>
+    </package>
+</struts>
