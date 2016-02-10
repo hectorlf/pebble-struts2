@@ -4,8 +4,14 @@
  
 <struts><!-- Configuration for the default package. -->
     <package name="default" extends="struts-default">
+
         <action name="hello" class="com.hectorlopezfernandez.pebble.struts2.action.HelloAction">
             <result>/templates/hello.pebble</result>
         </action>
+
+        <action name="i18n" class="com.hectorlopezfernandez.pebble.struts2.action.I18nAction">
+            <result>/templates/i18n.pebble</result>
+        </action>
+
     </package>
 </struts>

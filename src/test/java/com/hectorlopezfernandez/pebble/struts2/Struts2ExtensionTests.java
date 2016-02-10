@@ -79,4 +79,12 @@ public class Struts2ExtensionTests {
 		System.out.println(response.getStatus() + " - " + response.getContentAsString());
 	}
 
+	@Test
+	public void testI18n() throws Exception {
+		ContentResponse response = httpClient.newRequest("localhost", port).method(HttpMethod.GET).path("/i18n.action").send();
+		Assert.assertEquals(200, response.getStatus());
+		System.out.println(response.getStatus() + " - " + response.getContentAsString());
+		Assert.assertEquals("Hello Pebble World!", response.getContentAsString());
+	}
+
 }
