@@ -26,8 +26,9 @@ public class Struts2Extension extends AbstractExtension {
     
     @Override
     public Map<String, Function> getFunctions() {
-    	Map<String, Function> functions = new HashMap<>(2);
+    	Map<String, Function> functions = new HashMap<>(4);
     	functions.put(TextFunction.FUNCTION_NAME, new TextFunction());
+    	functions.put(PropertyFunction.FUNCTION_NAME, new PropertyFunction());
         return functions;
     }
 

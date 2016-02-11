@@ -13,5 +13,9 @@
             <result>/templates/i18n.pebble</result>
         </action>
 
+        <action name="property" class="com.hectorlopezfernandez.pebble.struts2.action.PropertyAction">
+            <result>/templates/property.pebble</result>
+        </action>
+
     </package>
 </struts>
